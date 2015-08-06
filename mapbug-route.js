@@ -38,4 +38,9 @@ if (Meteor.isClient) {
       });
     });
   });
+
+  Template.map.onRendered(function () {
+    var $container = this.$('.map-container');
+    $container.height(400);
+  });
 }
